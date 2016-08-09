@@ -18,6 +18,9 @@
     "measurement",
     "JavaScript"
   ],
+  "engines": {
+    "node": ">=4.2.4"
+  },
   "author": "Yannick Spark <sparky.creativespace@gmail.com> (https://sparkyspace.com/)",
   "license": "MIT",
   "bugs": {

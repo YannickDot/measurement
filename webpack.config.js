@@ -16,7 +16,7 @@ module.exports = env => {
     context: resolve(__dirname, ''),
     output: {
       path: join(__dirname, 'dist'),
-      filename: env.prod ? 'measurement.min.js' : 'measurement.js' ,
+      filename: env.prod ? 'measurement.min.js' : 'measurement.js',
       publicPath: ''
     },
     module: {
