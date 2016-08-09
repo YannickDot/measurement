@@ -1,10 +1,11 @@
-# measurement
+# Measurement
+=========
 <!--
 [![stability][0]][1]
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![js-standard-style][10]][11] -->
 
-A nice measurement API for JavaScript (inspired from the new Foundation framework in Swift 3)
+📏 A nice measurement API for JavaScript (inspired from the new Foundation framework in Swift 3)
 
 
 ### Features
