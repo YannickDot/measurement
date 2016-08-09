@@ -1,0 +1,23 @@
+{
+  "name": "measurement",
+  "version": "1.0.0",
+  "description": "A measurement API for JavaScript ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannickDot/measurement.git"
+  },
+  "keywords": [
+    "measurement",
+    "JavaScript"
+  ],
+  "author": "Yannick Spark <sparky.creativespace@gmail.com> (https://sparkyspace.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickDot/measurement/issues"
+  },
+  "homepage": "https://github.com/YannickDot/measurement#readme"
+}
