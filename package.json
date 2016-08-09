@@ -1,6 +1,6 @@
 {
   "name": "measurement",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A measurement API for JavaScript ",
   "main": "src/index.js",
   "scripts": {
