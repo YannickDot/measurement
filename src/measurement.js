@@ -1,4 +1,4 @@
-export class Measurement {
+class Measurement {
   constructor(value, unit) {
     this.value = unit.__truncated ? Math.trunc(value) : value
     this.unit = unit
@@ -32,6 +32,10 @@ export class Measurement {
       this.value * this.unit.coef
     )
   }
+}
+
+export function exposeFactory(...args) {
+  return new Measurement(...args)
 }
 
 // const TYPE_TEMPERATURE = "Temperature"

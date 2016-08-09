@@ -5,7 +5,7 @@
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![js-standard-style][10]][11] -->
 
-📏 A nice measurement API for JavaScript (inspired from the new Foundation framework in Swift 3)
+📏  -  A nice measurement API for JavaScript (inspired from the new Foundation framework in Swift 3)
 
 
 ### Features
@@ -21,17 +21,26 @@ $ npm install measurement --save
 
 ## Usage
 ```js
+import {Measurement, UnitMass, UnitDuration} from 'measurement'
 
-import {Measurement, UnitMass, UnitDuration} from './measurement.js'
+const weightKilograms = Measurement(75.0, UnitMass.kilograms)
+const pomodoroMinutes = Measurement(25.0, UnitDuration.minutes)
 
-const weight = Measurement(75.0, UnitMass.kilograms)
-const pomodoro = Measurement(25.0, UnitDuration.minutes)
+weightKilograms.toString()
+// => 75kg
 
-weight.convertTo(UnitMass.pounds)
-// =>
+const weightPounds = weightKilograms.convertTo(UnitMass.pounds)
+weightPounds.toString()
+// => 165.34683151378331lbs
 
-pomodoro.convertTo(UnitDuration.days)
-// =>
+
+pomodoroMinutes.toString()
+// => 25min
+
+const pomodoroSeconds = pomodoroMinutes.convertTo(UnitDuration.seconds)
+pomodoroSeconds.toString()
+// => 1500s
+
 
 const t0 = Measurement(60.0, UnitDuration.minutes)
 const t1 = Measurement(1.0, UnitDuration.hours)

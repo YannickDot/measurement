@@ -7,8 +7,9 @@
     "test": "mocha --reporter spec --compilers js:babel-core/register",
     "clean-dist": "rimraf dist",
     "prestart": "npm run clean-dist",
-    "start": "webpack --env.dev",
-    "build": "webpack --env.prod"
+    "start": "babel-node index.js",
+    "build": "npm run prestart && webpack --env.dev",
+    "build:min": "npm run prestart && webpack --env.prod"
   },
   "repository": {
     "type": "git",
