@@ -13,12 +13,12 @@ export class Measurement {
   }
 
   toString() {
-    return `${this.value} ${this.unit.__unit}`
+    return `${this.value}${this.unit.__unit}`
   }
 
   [Symbol.toPrimitive](hint) {
       if (hint === 'string') {
-          return `${this.value} ${this.unit.__unit}`
+          return `${this.value}${this.unit.__unit}`
       } else if (hint === 'number') {
           return this.value
       } else {

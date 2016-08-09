@@ -2,9 +2,13 @@
   "name": "measurement",
   "version": "0.0.1",
   "description": "A measurement API for JavaScript ",
-  "main": "src/index.js",
+  "main": "dist/measurement.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec --compilers js:babel-core/register",
+    "clean-dist": "rimraf dist",
+    "prestart": "npm run clean-dist",
+    "start": "webpack --env.dev",
+    "build": "webpack --env.prod"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,14 @@
   },
   "homepage": "https://github.com/YannickDot/measurement#readme",
   "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-node6": "^11.0.0",
     "chai": "^3.5.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "rimraf": "^2.5.4",
+    "webpack": "^2.1.0-beta.20"
   }
 }
