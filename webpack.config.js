@@ -2,6 +2,7 @@ const {resolve, join} = require('path')
 const webpack = require('webpack')
 
 module.exports = env => {
+  const libraryName = 'measurement'
   const addPlugin = (add, plugin) => add ? plugin : undefined
   const ifProd = plugin => addPlugin(env.prod, plugin)
   const ifDev = plugin => addPlugin(env.dev, plugin)
@@ -18,8 +19,9 @@ module.exports = env => {
       path: join(__dirname, 'dist'),
       filename: env.prod ? 'measurement.min.js' : 'measurement.js',
       publicPath: '',
-      library: true,
-      libraryTarget: "umd"
+      library: libraryName,
+      libraryTarget: 'umd',
+      umdNamedDefine: true
     },
     module: {
       loaders: [
