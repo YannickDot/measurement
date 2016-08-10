@@ -1,5 +1,5 @@
 {
-  "name": "measurement",
+  "name": "measurement-js",
   "version": "0.0.1",
   "description": "A measurement API for JavaScript ",
   "main": "dist/measurement.js",

@@ -16,7 +16,7 @@
 
 ### Installation
 ```sh
-$ npm install measurement --save
+$ npm install measurement-js --save
 ```
 
 ## Usage
