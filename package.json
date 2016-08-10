@@ -27,6 +27,7 @@
   "bugs": {
     "url": "https://github.com/YannickDot/measurement/issues"
   },
+  "tonicExampleFilename": "tonic-example.js",
   "homepage": "https://github.com/YannickDot/measurement#readme",
   "devDependencies": {
     "babel-cli": "^6.11.4",

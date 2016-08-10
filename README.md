@@ -1,5 +1,5 @@
 # Measurement
-=========
+
 <!--
 [![stability][0]][1]
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
@@ -41,11 +41,10 @@ const pomodoroSeconds = pomodoroMinutes.convertTo(UnitDuration.seconds)
 pomodoroSeconds.toString()
 // => 1500s
 
-
 const t0 = Measurement(60.0, UnitDuration.minutes)
 const t1 = Measurement(1.0, UnitDuration.hours)
 
-t1.equals(t2)
+t1.equals(t0)
 // => true
 ```
 
