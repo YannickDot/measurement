@@ -17,7 +17,9 @@ module.exports = env => {
     output: {
       path: join(__dirname, 'dist'),
       filename: env.prod ? 'measurement.min.js' : 'measurement.js',
-      publicPath: ''
+      publicPath: '',
+      library: true,
+      libraryTarget: "umd"
     },
     module: {
       loaders: [

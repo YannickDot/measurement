@@ -1,3 +1,4 @@
+// @flow
 const TYPE_VOLUME = "Volume"
 
 export const UnitVolume = {

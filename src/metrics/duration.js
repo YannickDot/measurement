@@ -1,3 +1,4 @@
+// @flow
 const TYPE_DURATION = "Duration"
 
 export const UnitDuration = {

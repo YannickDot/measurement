@@ -1,3 +1,4 @@
+// @flow
 const TYPE_MASS = "Mass"
 
 export const UnitMass = {
