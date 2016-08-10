@@ -8,7 +8,7 @@
     "clean-dist": "rimraf dist",
     "prestart": "npm run clean-dist",
     "start": "babel-node index.js",
-    "dev": "npm run prestart && webpack --env.dev --progress --color --watch",
+    "dev": "webpack --env.dev --progress --color --watch",
     "build": "npm run prestart && webpack --env.prod"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-es2016": "^6.11.3",
     "babel-preset-node6": "^11.0.0",
+    "babel-preset-stage-0": "^6.5.0",
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "rimraf": "^2.5.4",
